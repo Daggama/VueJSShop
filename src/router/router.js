@@ -4,6 +4,8 @@ import About from "@/pages/About"
 import UserPage from "@/pages/UserPage"
 import Cart from "@/pages/Cart"
 import Contacts from "@/pages/Contacts"
+import Catalog from "@/pages/Catalog"
+import Shares from "@/pages/Shares"
 
 const routes = [
     {
@@ -25,6 +27,14 @@ const routes = [
     {
         path: '/contact',
         component: Contacts
+    },
+    {
+        path: '/catalog',
+        component: Catalog
+    },
+    {
+        path: '/shares',
+        component: Shares
     },
 ]
 
