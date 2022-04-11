@@ -10,9 +10,9 @@ import Navbar from "@/components/Navbar";
 
 export default {
   components: {
-    Navbar
-  }
-}
+    Navbar,
+  },
+};
 </script>
 
 <style>
@@ -20,49 +20,52 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #1e1e1e;
 }
 .app {
   padding: 20px;
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('./fonts/Ubuntu-Light.eot');
-	src: url('./fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-	url('./fonts/Ubuntu-Light.woff') format('woff'),
-	url('./fonts/Ubuntu-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Light.eot");
+  src: url("./fonts/Ubuntu-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Ubuntu-Light.woff") format("woff"),
+    url("./fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('./fonts/Ubuntu-Regular.eot');
-	src: url('./fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
-	url('./fonts/Ubuntu-Regular.woff') format('woff'),
-	url('./fonts/Ubuntu-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Regular.eot");
+  src: url("./fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Ubuntu-Regular.woff") format("woff"),
+    url("./fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('./fonts/Ubuntu-Medium.eot');
-	src: url('./fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
-	url('./fonts/Ubuntu-Medium.woff') format('woff'),
-	url('./fonts/Ubuntu-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Medium.eot");
+  src: url("./fonts/Ubuntu-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Ubuntu-Medium.woff") format("woff"),
+    url("./fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('./fonts/Ubuntu-Bold.eot');
-	src: url('./fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-	url('./fonts/Ubuntu-Bold.woff') format('woff'),
-	url('./fonts/Ubuntu-Bold.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Bold.eot");
+  src: url("./fonts/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Ubuntu-Bold.woff") format("woff"),
+    url("./fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 </style>
