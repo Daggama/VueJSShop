@@ -6,7 +6,7 @@
 				<p>building materials store</p>
 	 		 </div>
 			<div class="navbar-links">
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -14,7 +14,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -22,7 +22,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -30,7 +30,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -38,7 +38,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -46,7 +46,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -77,7 +77,7 @@
 						<p>МАТЕРИАЛЫ</p>
 					</div>
 				</div>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -93,7 +93,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -101,7 +101,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="">
+				<a @click="$router.push('')">
 					<div class="navbar-link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar-text">
@@ -109,9 +109,9 @@
 						</div>
 					</div>
 				</a>
+			</div>
 		</div>
 	</div>
-  </div>
 </template>
 
 <script>
@@ -182,6 +182,7 @@ export default {
 .navbar-link .navbar-text p {
   font-weight: 400;
   font-size: 14px;
+  line-height: 14px;
   color: #a5a5a5;
 }
 .navbar-link:hover {
