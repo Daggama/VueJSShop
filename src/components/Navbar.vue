@@ -1,10 +1,13 @@
 <template>
 	<div class="navbar">
 		<div class="navbar-container">
-	  		<div class="navbar-title">
-				<h1>BuildPoint</h1>
-				<p>building materials store</p>
-	 		 </div>
+			<a @click="$router.push('/')">
+				<div class="navbar-title">
+					<h1>BuildPoint</h1>
+					<p>building materials store</p>
+				</div>
+			</a>
+
 			<div class="navbar-links">
 				<a @click="$router.push('')">
 					<div class="navbar-link">
@@ -116,24 +119,7 @@
 
 <script>
 export default {
-  data() {
-	return {
-	  selectedSort: "",
-	  searchQuery: "",
-	};
-  },
-  computed: {
-	sortedPosts() {
-	  return [...this.posts].sort((post1, post2) =>
-		post1[this.selectedSort]?.localeCompare(post2[this.selectedSort])
-	  );
-	},
-	sortedAndSearchedPosts() {
-	  return this.sortedPosts.filter((post) =>
-		post.title.toLowerCase().includes(this.searchQuery.toLowerCase())
-	  );
-	},
-  },
+	
 };
 </script>
 

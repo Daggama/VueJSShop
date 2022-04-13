@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "my-select",
+  name: 'my-select',
   props: {
     model_value: {
       type: String,
