@@ -2,15 +2,18 @@
   <navbar></navbar>
   <div class="app">
     <router-view></router-view>
+	<log-in></log-in>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
+import LogIn from '@/components/LogIn.vue';
 
 export default {
   components: {
-    Navbar
+    Navbar,
+	LogIn
   }
 }
 </script>

@@ -8,7 +8,7 @@
 export default {
     name:"my-select",
     props:{
-        model_value:{
+        model_value: {
             type: String,
         },
         options:{

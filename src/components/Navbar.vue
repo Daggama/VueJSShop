@@ -3,7 +3,7 @@
     <div class="navbar_container">
       <div class="logo">
         <a @click="$router.push('/')">
-          <img src="../icons/logo.svg" alt="">
+          <img src="" alt="logo">
         </a>
       </div>
       <div class="links flex_center">
@@ -15,13 +15,16 @@
           <a @click="$router.push('/contact')">Contacts</a>
         </div>
         <div class="navbar_left">
-              <a href=""><img src="../icons/search.svg" alt=""></a>
+              <a href=""><img src="../icons/search.svg" alt="search"></a>
               <a @click="$router.push('/cart')">
                 <img src="../icons/cart.svg" alt="">
               </a>
-              <a @click="$router.push('/user')">
-                <img src="../icons/user.svg" alt="">
-              </a>
+              <!-- <a @click="$router.push('/user')">
+                <img src="" alt="user">
+              </a> -->
+              <button class="navbar_btn" @click="showDialog">
+                Вход
+              </button>
         </div>
       </div>
     </div>
@@ -29,7 +32,12 @@
 </template>
 
 <script>
+import LogIn from '@/components/LogIn.vue';
+import MyDialog from '@/components/UI/MyDialog.vue';
 export default {
+  components: {
+    LogIn, MyDialog
+  },
   data(){
     return {
       selectedSort: '',
@@ -42,7 +50,10 @@ export default {
     },
     sortedAndSearchedPosts() {
       return this.sortedPosts.filter(post => post.title.toLowerCase().includes(this.searchQuery.toLowerCase()))
-    }
+    },
+    showDialog() {
+            this.dialogVisible = true
+    },
   },
 }
 </script>
@@ -89,5 +100,17 @@ a {
   font-size: 14px;
   line-height: 16px;
   cursor:pointer;
+}
+.navbar_btn {
+  width: 93px;
+  height: 44px;
+  background: #2B2B2B;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #A5A5A5;
+  border: none;
+  cursor: pointer;
 }
 </style>
