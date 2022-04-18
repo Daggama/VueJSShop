@@ -1,105 +1,202 @@
 <template>
-  <div class="navbar flex_center">
-    <div class="navbar_container">
-      <div class="logo">
-        <a @click="$router.push('/')">
-          <img src="" alt="logo">
-        </a>
-      </div>
-      <div class="links flex_center">
-        <div class="navbar_center">
-          <a @click="$router.push('/')">Home</a>
-          <a @click="$router.push('/catalog')">Catalog</a>
-          <a @click="$router.push('/shares')">Shares</a>
-          <a @click="$router.push('/about')">About us</a>
-          <a @click="$router.push('/contact')">Contacts</a>
-        </div>
-        <div class="navbar_left">
-              <a href=""><img src="../icons/search.svg" alt="search"></a>
-              <a @click="$router.push('/cart')">
-                <img src="../icons/cart.svg" alt="">
-              </a>
-              <!-- <a @click="$router.push('/user')">
-                <img src="" alt="user">
-              </a> -->
-              <button class="navbar_btn" @click="showDialog">
-                Вход
-              </button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="navbar">
+		<div class="navbar-container">
+			<a @click="$router.push('/')">
+				<div class="navbar-title">
+					<h1>BuildPoint</h1>
+					<p>building materials store</p>
+				</div>
+			</a>
+
+			<div class="navbar-links">
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Гипсокартон</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Цемент</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Сухие смеси</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Газоблоки</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Краски и эмали</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Пена, клей, герметики</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>
+								Профиль для гипсокартона
+							</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Строительные инструпенты</p>
+						</div>
+					</div>
+				</a>
+				<div class="navbar-link-text  mt60">
+					<div class="navbar-text">
+						<p>МАТЕРИАЛЫ</p>
+					</div>
+				</div>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Теплоизоляционные</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Гидроизоляционные</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Древесно-плитные</p>
+						</div>
+					</div>
+				</a>
+				<a @click="$router.push('')">
+					<div class="navbar-link">
+						<img src="../icons/Name19.svg" alt="">
+						<div class="navbar-text">
+							<p>Расходные</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+>>>>>>> a45b86b2bccd6608990d54143a532e7966a64439
 </template>
 
 <script>
 import LogIn from '@/components/LogIn.vue';
 import MyDialog from '@/components/UI/MyDialog.vue';
-export default {
-  components: {
-    LogIn, MyDialog
-  },
-  data(){
-    return {
-      selectedSort: '',
-      searchQuery:'',
-    }
-  },
-  computed: {
-    sortedPosts() {
-      return [...this.posts].sort((post1, post2) => post1[this.selectedSort]?.localeCompare(post2[this.selectedSort]))
-    },
-    sortedAndSearchedPosts() {
-      return this.sortedPosts.filter(post => post.title.toLowerCase().includes(this.searchQuery.toLowerCase()))
-    },
-    showDialog() {
-            this.dialogVisible = true
-    },
-  },
-}
-</script>
+export default {	
+  
+};
 
+</script>
 
 <style scoped>
 .navbar {
-  height: 100px;
-  background-color: #F8F8FB;
+  height: 931px;
+  width: 230px;
+  background-color: #1e1e1e;
+  position: fixed;
+}
+.navbar-container {
+  margin: 35px 0 0 30px;
+}
+.navbar-title {
+  margin-left: 15px;
+}
+.navbar-title h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #e7e7e7;
+}
+.navbar-title p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #a5a5a5;
 }
 
-.navbar_container{
+.navbar-links {
+  margin-top: 30px;
+}
+.navbar-link {
   display: flex;
   align-items: center;
-  padding: 15px 0;
-  width: 1200px;
+  width: 200px;
+  height: 44px;
+  margin-top: 2px;
+  border-radius: 8px;
 }
-
-.links{
-  width: 100%;
+.navbar-link img {
+  margin-left: 12px;
 }
-
-.navbar_center{
-  margin: auto;
+.navbar-text {
+  margin-left: 12px;
+  max-width: 110px;
 }
-.navbar_center a{
-  margin-right: 40px;
+.navbar-link .navbar-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #a5a5a5;
 }
-
-.navbar_left{
-  margin-left: auto;
+.navbar-link:hover {
+  background-color: #242424;
 }
-.navbar_left a{
-  margin-right: 24px;
-}
-
-.flex_center{
+.navbar-link-text {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 44px;
+  margin-top: 10px;
+  border-radius: 8px;
+    color: #a5a5a5;
+}
 
+.mt60{
+	margin-top: 40px;
 }
 a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  cursor:pointer;
+  cursor: pointer;
+  text-decoration: none;
 }
 .navbar_btn {
   width: 93px;
