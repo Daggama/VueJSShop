@@ -1,18 +1,18 @@
 <template>
     <div class="header">
-        <div class="header-container">
+        <div class="header-container display-flex">
             <div class="haeder-left">
                 <input type="text" placeholder="Поиск по магазину">
             </div>
-            <div class="haeder-right">
+            <div class="display-flex">
                 <a @click="$router.push('/cart')">
-                    <div class="cart">
+                    <div class="cart display-flex">
                         <img src="../icons/cart.svg" alt="">
                     </div>
                 </a>
                 <a @click="$router.push('/user')">
-                    <div class="login">
-                        <div class="img">
+                    <div class="login display-flex">
+                        <div class="logo-img">
 
                         </div>
                         <div class="name">
@@ -32,27 +32,24 @@ export default {
 </script>
 
 <style scoped>
+.display-flex{
+    display: flex;
+    align-items: center;
+}
 .header{
     margin-top: 32px;
     width: 1170px;
 }
 .header-container{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.haeder-right{
-    display: flex;
 }
 .cart{
-    padding: 8px 14px;
+    padding: 10px 14px;
     border-radius: 8px;
     background-color: #2B2B2B;
     transition: 0.1s;
 }
 .login{
-    display: flex;
-    align-items: center;
     width: 160px;
     margin: 0 20px;
     padding: 8px 14px;
@@ -60,7 +57,7 @@ export default {
     background-color: #2B2B2B;
     transition: 0.1s;
 }
-.login .img{
+.login .logo-img{
     width: 28px;
     height: 28px;
     border-radius: 100%;
@@ -80,11 +77,11 @@ export default {
 }
 
 input{
-    background: url(http://localhost:8080/img/search.b9629c35.svg);
+    background: url(../icons/search.svg);
     background-repeat: no-repeat;
     background-position: 10px 9px !important;
     width: 742px;
-    padding: 14px 40px;
+    padding: 14.25px 40px;
     border: none;
     border-radius: 8px;
     background-color: #2B2B2B;

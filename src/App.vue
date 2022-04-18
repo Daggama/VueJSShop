@@ -1,20 +1,22 @@
 <template>
-	<navbar></navbar>
+	<mynavbar></mynavbar>
 	<div class="app left">
 	
-		<MyHeader></MyHeader>
+		<myheader></myheader>
 		<router-view></router-view>
+		<myfooter></myfooter>
 	</div>
 </template>
 
 <script>
-import navbar from "@/components/Navbar";
-import MyHeader from "@/components/Header";
-
+import mynavbar from "@/components/Navbar";
+import myheader from "@/components/Header";
+import myfooter from "@/components/Footer"
 export default {
   	components: {
-		navbar,
-		MyHeader,
+		mynavbar,
+		myheader,
+		myfooter,
   	},
 };
 </script>
@@ -25,6 +27,7 @@ export default {
   	padding: 0;
   	box-sizing: border-box;
   	font-family: "Ubuntu", sans-serif;
+	color: #E7E7E7;
 }
 body {
   	background-color: #1e1e1e;
