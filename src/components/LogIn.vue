@@ -13,7 +13,6 @@
                     <div class="login__modal-btn">Регистрация</div>
                     <div class="login__modal-btn active">Вход</div>
                 </div>
-
                 <div class="login__body">
                     <input type="email" class="login__input" id="email" placeholder="Электронная почта">
                     <input type="password" class="login__input" id="pass" placeholder="Пароль">
@@ -22,8 +21,6 @@
                     </button>
                     <a href="#" class="login__link">Забыли пароль?</a>
                 </div>
-
-                
             </form>
         </div>
     </my-dialog>
@@ -110,7 +107,7 @@ export default {
     padding: 15px 16px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: inherit;
     border: 1px solid #7D7E7F;
     font-weight: 400;
@@ -128,7 +125,7 @@ export default {
     margin-top: 23px;
     background: #4CB7E4;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;

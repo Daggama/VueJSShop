@@ -1,18 +1,18 @@
 <template>
     <div class="header">
-        <div class="header-container display-flex">
-            <div class="haeder-left">
+        <div class="header__container display__flex">
+            <div class="haeder__left">
                 <input type="text" placeholder="Поиск по магазину">
             </div>
-            <div class="display-flex">
+            <div class="display__flex">
                 <a @click="$router.push('/cart')">
-                    <div class="cart display-flex">
+                    <div class="cart display__flex">
                         <img src="../icons/cart.svg" alt="">
                     </div>
                 </a>
                 <a @click="$router.push('/user')">
-                    <div class="login display-flex">
-                        <div class="logo-img">
+                    <div class="login display__flex">
+                        <div class="logo__img">
 
                         </div>
                         <div class="name">
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-.display-flex{
+.display__flex{
     display: flex;
     align-items: center;
 }
@@ -40,7 +40,7 @@ export default {
     margin-top: 32px;
     width: 1170px;
 }
-.header-container{
+.header__container{
     justify-content: space-between;
 }
 .cart{
@@ -57,7 +57,7 @@ export default {
     background-color: #2B2B2B;
     transition: 0.1s;
 }
-.login .logo-img{
+.login .logo__img{
     width: 28px;
     height: 28px;
     border-radius: 100%;
