@@ -1,7 +1,7 @@
 <template>
-  <div>
-      Главная 
-  </div>
+    <div>
+        Главная 
+    </div>
 </template>
 
 <script>

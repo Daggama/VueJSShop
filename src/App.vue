@@ -1,9 +1,9 @@
 <template>
 	<mynavbar></mynavbar>
 	<div class="app left">
-	
 		<myheader></myheader>
 		<router-view></router-view>
+		<!-- <mylogin></mylogin> -->
 		<myfooter></myfooter>
 		<log-in></log-in>
 	</div>
@@ -13,13 +13,13 @@
 import mynavbar from "@/components/Navbar";
 import myheader from "@/components/Header";
 import myfooter from "@/components/Footer";
-import LogIn from '@/components/LogIn.vue';
+import mylogin from "@/components/LogIn"
 export default {
   	components: {
 		mynavbar,
 		myheader,
 		myfooter,
-		LogIn
+		mylogin,
   	},
 };
 </script>
