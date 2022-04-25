@@ -115,14 +115,13 @@
 			</div>
 		</div>
 	</div>
->>>>>>> a45b86b2bccd6608990d54143a532e7966a64439
 </template>
 
 <script>
 import LogIn from '@/components/LogIn.vue';
 import MyDialog from '@/components/UI/MyDialog.vue';
 export default {	
-  
+
 };
 
 </script>

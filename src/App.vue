@@ -5,18 +5,21 @@
 		<myheader></myheader>
 		<router-view></router-view>
 		<myfooter></myfooter>
+		<log-in></log-in>
 	</div>
 </template>
 
 <script>
 import mynavbar from "@/components/Navbar";
 import myheader from "@/components/Header";
-import myfooter from "@/components/Footer"
+import myfooter from "@/components/Footer";
+import LogIn from '@/components/LogIn.vue';
 export default {
   	components: {
 		mynavbar,
 		myheader,
 		myfooter,
+		LogIn
   	},
 };
 </script>
