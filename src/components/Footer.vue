@@ -28,7 +28,7 @@
             </div>
             <div class="footer__bottom display__flex">
                 <div class="map">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8298.397827755223!2d71.42373249138127!3d51.145100131268215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68d6552a1212b905!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQkNGB0YLQsNC90LA!5e0!3m2!1sru!2skz!4v1620669807979!5m2!1sru!2skz" width="360px" height="200px" style="border-radius:8px;border:none" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8298.527827755223!2d71.42373249138127!3d51.145100131268215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68d6552a1212b905!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQkNGB0YLQsNC90LA!5e0!3m2!1sru!2skz!4v1620669807979!5m2!1sru!2skz" width="360px" height="200px" style="border-radius:8px;border:none" allowfullscreen="" loading="lazy"></iframe>
                 </div>      
                 <div class="contacts">
                     <h3>Будьте в курсе новостей</h3>
@@ -98,7 +98,7 @@
 }
 .footer__bottom .contacts{
     width: 32%;
-    margin-left: 100px;
+    margin-left: 102px;
 }
 .contacts input,button{
     color:#1F2126;

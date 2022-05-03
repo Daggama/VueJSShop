@@ -10,7 +10,7 @@
                         <img src="../icons/cart.svg" alt="">
                     </div>
                 </a>
-                <a @click="$router.push('/user')">
+                <a @click="$router.push('/userpage')">
                     <div class="login display__flex">
                         <div class="logo__img">
 
@@ -37,7 +37,6 @@ export default {
     align-items: center;
 }
 .header{
-    margin-top: 32px;
     width: 1170px;
 }
 .header__container{

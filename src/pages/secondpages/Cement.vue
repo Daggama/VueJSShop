@@ -1,8 +1,9 @@
 <template>
     <div class="main">
         <div class="page__title">
-            <h1>Главная страница</h1>
+            <h1>Цемент</h1>
         </div>
+        
         <div class="tovar">
             <div class="center">
                 <a 
@@ -30,19 +31,13 @@
                     </div>
                 </a>
             </div>
-        </div>         
+        </div>     
     </div>
 </template>
 
 <script>
 import axios from "axios";
     export default {
-        props: {
-            selected:{
-                type: String,
-                default: ''
-            }
-        },
         data() {
             return {
                 // tasks
@@ -53,7 +48,7 @@ import axios from "axios";
             async getData() {
                 try {
                     // fetch tasks
-                    const response = await axios.get('http://127.0.0.1:8000/item/PItemView/');
+                    const response = await axios.get('http://127.0.0.1:8000/item/Cement/');
                     // set the data returned as tasks
                     this.posts = response.data;
                 } catch (error) {

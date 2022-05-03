@@ -1,7 +1,9 @@
 <template>
-  <div>
-      Корзина
-  </div>
+    <div class="main">
+        <div class="page__title">
+            <h1>Корзина</h1>
+        </div>       
+    </div>
 </template>
 
 <script>
