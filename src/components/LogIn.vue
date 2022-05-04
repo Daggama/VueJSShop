@@ -98,7 +98,7 @@ export default {
     padding: 14px;
     cursor: pointer;
 }
-.active {
+.login__tab-active {
     border-bottom: 3px solid #4CB7E4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
 }

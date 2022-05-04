@@ -15,7 +15,7 @@
 import navbar from "@/components/Navbar";
 import myheader from "@/components/Header";
 import myfooter from "@/components/Footer";
-import mylogin from "@/components/LogIn"
+import LogIn from "@/components/LogIn"
 
 export default {
   	components: {
