@@ -9,7 +9,7 @@
 			</a>
 
 			<div class="navbar__links">
-				<a @click="$router.push('')">
+				<a @click="$router.push('/drywall')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -17,7 +17,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/cement')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -25,7 +25,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/drymixes')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -33,7 +33,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/gasblocks')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -41,7 +41,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/paintsandenamels')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -49,7 +49,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/foam')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -57,7 +57,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/profilefordrywall')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -67,7 +67,7 @@
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/constructionTools')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
 						<div class="navbar__text">
@@ -80,34 +80,34 @@
 						<p>МАТЕРИАЛЫ</p>
 					</div>
 				</div>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/thermalinsulation')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
-						<div class="navbar-text">
+						<div class="navbar__text">
 							<p>Теплоизоляционные</p>
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/waterproofing')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
-						<div class="navbar-text">
+						<div class="navbar__text">
 							<p>Гидроизоляционные</p>
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/woodslab')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
-						<div class="navbar-text">
+						<div class="navbar__text">
 							<p>Древесно-плитные</p>
 						</div>
 					</div>
 				</a>
-				<a @click="$router.push('')">
+				<a @click="$router.push('/consumables')">
 					<div class="navbar__link">
 						<img src="../icons/Name19.svg" alt="">
-						<div class="navbar-text">
+						<div class="navbar__text">
 							<p>Расходные</p>
 						</div>
 					</div>

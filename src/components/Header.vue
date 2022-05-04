@@ -10,6 +10,7 @@
                         <img src="../icons/cart.svg" alt="">
                     </div>
                 </a>
+<<<<<<< HEAD
                 <!-- <a @click="$router.push('/user')">
                     <div class="login display__flex">
                         <div class="logo__img">
@@ -21,6 +22,9 @@
                     </div>    
                 </a> -->
                 <a @click="showDialog">
+=======
+                <a @click="$router.push('/userpage')">
+>>>>>>> 7cadf2bd9b4ed60890efa7fbb9a75c7b018cce5a
                     <div class="login display__flex">
                         <div class="logo__img">
 
@@ -69,7 +73,6 @@ export default {
     align-items: center;
 }
 .header{
-    margin-top: 32px;
     width: 1170px;
 }
 .header__container{
