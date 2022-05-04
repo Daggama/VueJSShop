@@ -3,9 +3,9 @@
 	<div class="app left">
 		<myheader></myheader>
 		<router-view></router-view>
-		<!-- <mylogin></mylogin> -->
+
 		<myfooter></myfooter>
-		<log-in></log-in>
+		
 	</div>
 </template>
 
@@ -13,14 +13,21 @@
 import mynavbar from "@/components/Navbar";
 import myheader from "@/components/Header";
 import myfooter from "@/components/Footer";
-import mylogin from "@/components/LogIn"
+import MyDialog from "@/components/UI/MyDialog.vue";
+import LogIn from "@/components/LogIn";
 export default {
   	components: {
 		mynavbar,
 		myheader,
 		myfooter,
-		mylogin,
+		LogIn,
+		MyDialog
   	},
+	// data() {
+	// 	return {
+	// 		dialogVisible: true,
+	// 	}
+	// }
 };
 </script>
 

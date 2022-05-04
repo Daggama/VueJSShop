@@ -10,7 +10,17 @@
                         <img src="../icons/cart.svg" alt="">
                     </div>
                 </a>
-                <a @click="$router.push('/user')">
+                <!-- <a @click="$router.push('/user')">
+                    <div class="login display__flex">
+                        <div class="logo__img">
+
+                        </div>
+                        <div class="name">
+                            <p>Нариман</p>
+                        </div>
+                    </div>    
+                </a> -->
+                <a @click="showDialog">
                     <div class="login display__flex">
                         <div class="logo__img">
 
@@ -22,12 +32,34 @@
                 </a>
             </div>
         </div>
+        <my-dialog v-model:show="dialogVisible">
+            <log-in></log-in>
+        </my-dialog>
     </div>
 </template>
 
 <script>
-export default {
+import MyDialog from "@/components/UI/MyDialog.vue";
+import LogIn from "@/components/LogIn";
 
+export default {
+    components: {
+        MyDialog,
+        LogIn
+    },
+    data() {
+		return {
+			dialogVisible: false,
+		}
+	},
+    methods: {
+        showDialog() {
+            this.dialogVisible = true;
+        },
+        hideDialog() {
+            this.dialogVisible = false
+        }
+    }
 };
 </script>
 

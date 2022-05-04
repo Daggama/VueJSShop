@@ -34,6 +34,7 @@ export default {
     display: flex;
 }
 .dialog__content {
+    position: relative;
     margin: auto;
     width: 500px;
     min-height: 489px;
